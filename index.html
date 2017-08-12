@@ -7,48 +7,150 @@
   <body>
    <header class="header-main">
       <nav class="navi-main">
-        <div class="logo">
-          <img src="logo.png" alt="Logo" width="200" height="200">
-        </div>
+        <a href="" class="navi-main-logo">
+          <img src="logo.png" alt="Logo of the Borodinski Barbershop" width="200" height="200">
+        </a>
         <ul class="navi-site">
-          <li>Информация</li>
-          <li>Новости</li>
-          <li>Прайс-лист</li>
-          <li>Магазин</li>
-          <li>Контакты</li>
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="price.html">Прайс-лист</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="Contact.html">Контакты</a></li>
         </ul>
-        <ul>
-          <li>Вход</li>
+        <ul class="navi-user">
+          <li class="login-link">Вход</li>
         </ul>
       </nav>
    </header>
-   <main>
+   <main class="container">
      <h1 class="invisible">Borodinski Home</h1>
+
+     <section class="benefits">
      <h2 class="invisible">Benefits</h2>
-     <ul>
-       <li>
-          <section>
-            <h3 class="benefits-headline">Быстро</h3>
-            <p class="benefits-text">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
-          </section>
+     <ul class="benefits-list">
+       <li class="benefits-item">
+          <h3>Быстро</h3>
+          <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
         </li>
-        <li>
-           <section>
-             <h3 class="benefits-headline">Круто</h3>
-             <p class="benefits-text">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ. </p>
-           </section>
+        <li class="benefits-item">
+          <h3>Круто</h3>
+          <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ. </p>
          </li>
-         <li>
-            <section>
-              <h3 class="benefits-headline">Дорого</h3>
-              <p class="benefits-text">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
-            </section>
+         <li class="benefits-item">
+          <h3>Дорого</h3>
+          <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
           </li>
-      </ul>
-     <section>
-       <h3></h3>
-     </section>
+        </ul>
+       </section>
+
+       <section class="news">
+         <h2>Новости</h2>
+         <ul class="news-list">
+           <li class="news-item">
+             <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+             <time datetime="2016-01-11">11 январ</time>
+           </li>
+           <li class="news-item">
+             <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+             <time datetime="2016-01-18">18 январ</time>
+           </li>
+         </ul>
+         <a href="news.html" class="button">Все новости</a>
+       </section>
+
+      <section class="gallery">
+        <h2>Фотогалерея</h2>
+        <figure class="gallery-content">
+          <a href="#"><img src="studio.jpg" alt="Studio Interior" width="200" height="200"></a>
+        </figure>
+        <span class="button gallery-button gallery-button-back">Назад</span>
+        <span class="button gallery-button gallery-button-next">Вперед</span>
+      </section>
+
+      <section class="contacts">
+        <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+        <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+            ТЕЛЕФОН: +7 (495) 666-02-66
+          </p>
+        <p>
+          ВРЕМЯ РАБОТЫ: <br>
+          ПН—ПТ: С 10:00 ДО 22:00 <br>
+          СБ—ВС: С 10:00 ДО 19:00
+        </p>
+        <a href="map.html" class="button contacts-button">Как проехать</a>
+        <a href="contacts.html" class="button contacts-button">Обратная связь</a>
+      </section>
+
+      <section class="appointment">
+        <h2>ЗАПИСАТЬСЯ</h2>
+        <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="appointment-item">
+            Дата
+             <input type="text" name="date" value="" placeholder="12.08.2017">
+          </p>
+          <p class="appointment-item">
+            Время
+             <input type="text" name="time" value="" placeholder="10:00">
+          </p>
+          <p class="appointment-item">
+            Ваше имя
+             <input type="text" name="name" value="" placeholder="John Doe">
+          </p>
+          <p class="appointment-item">
+            Телефон
+             <input type="text" name="phone" value="" placeholder="0 123 456 78 90">
+          </p>
+          <button class="button" type="submit" name="appointment-confirm"></button>
+        </form>
+      </section>
    </main>
-   <footer></footer>
+
+   <footer class="footer-main">
+     <p class="footer-contacts">
+       БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+       АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+       <a href="map.html">КАК НАС НАЙТИ?</a>
+       ТЕЛЕФОН: +7 (495) 666-02-66
+     </p>
+     <div class="footer-social">
+       <b>Давайте дружить!</b>
+       <ul>
+          <li><a href="#">Вконтакте</a></li>
+          <li><a href="#">Фейсбук</a></li>
+          <li><a href="#">Инстаграм</a></li>
+      </ul>
+     </div>
+     <p class="footer-copyright">
+       <b>Разработано</b>
+       <a href="htmlacademy.ru" class="button">HTML Academy</a>
+     </p>
+   </footer>
+
+   <section class="modal modal-login">
+     <h2>Личный кабинет</h2>
+     <p>Введите свой логин и пароль</p>
+     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+       <p>
+         <input class="login-icon-user" type="text" name="login" value="" placeholder="Login">
+       </p>
+       <p>
+         <input class="login-icon-password" type="password" name="password" value="" placeholder="Password">
+       </p>
+       <p class="login-password-info"></p>
+          <input class="invisible" type="checkbox" name="remember-me" value=""> Запомнить меня
+          <a href="#" class="restore"> Я забыл пароль!</a>
+       </p>
+
+       <button class="button" type="submit" name="enter">Войти</button>
+     </form>
+     <span class="modal-close">X</span>
+   </section>
+
+   <section class="modal modal-map">
+     <h2 class="invisible">Как добраться</h2>
+     <span class="modal-close">X</span>
+   </section>
   </body>
 </html>
